@@ -25,4 +25,4 @@ int main(){
     cin >> z;
     cout << cheetah(z);
     return 0;
-}
+}  
