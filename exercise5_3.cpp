@@ -3,18 +3,18 @@
 using namespace std;
 
 int cheetah(int money){ 
-    int a = 0;
-    int b = 0;
-    int c = 0;
-    a = money /10;
-    int kuad = a;
-    int x = a;
+    int startkuad = 0;
+    int kuadjaksalak = 0;
+    int salakleft = 0;
+    startkuad = money /10;
+    int kuad = startkuad;
+    int salak = startkuad;
 
-    while(x >2){
-        b = x/3;
-        kuad = kuad+b;
-        c = b+(x%3);
-        x = c;
+    while(salak >2){
+        kuadjaksalak = salak/3;
+        kuad = kuad+kuadjaksalak;
+        salakleft = kuadjaksalak+(salak%3);
+        salak = salakleft;
     }
     return kuad;
 }
